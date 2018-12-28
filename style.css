@@ -1,0 +1,25 @@
+html{background:#6C7989;background:#6C7989 linear_gradient(#6C7989, #434B55) fixed}
+body{padding:50px 0;margin:0;font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;color:#555;font-weight:300;background:inline-image("checker.png") fixed}
+.wrapper{width:640px;margin:0 auto;background:#DEDEDE;border-radius:8px;box-shadow:rgba(0,0,0,0.2) 0 0 0 1px,rgba(0,0,0,0.45) 0 3px 10px}
+header,section,footer{display:block}
+header{border-radius:8px 8px 0 0;background:#C6EAFA;background:linear_gradient(#DDFBFC, #C6EAFA);position:relative;padding:15px 20px;border-bottom:1px solid #B2D2E1}
+header h1{margin:0;padding:0;font-size:24px;line-height:1.2;color:#069;text-shadow:rgba(255,255,255,0.9) 0 1px 0}
+header.without-description h1{margin:10px 0}
+header p{margin:0;color:#61778B;width:300px;font-size:13px}
+header p.view{display:none;font-weight:700;text-shadow:rgba(255,255,255,0.9) 0 1px 0;-webkit-font-smoothing:antialiased}
+header p.view a{color:#06c}
+header p.view small{font-weight:400}
+header ul{margin:0;padding:0;list-style:none;position:absolute;z-index:1;right:20px;top:20px;height:38px;padding:1px 0;background:#5198DF;background:linear_gradient(#77B9FB, #3782CD);border-radius:5px;box-shadow:inset rgba(255,255,255,0.45) 0 1px 0,inset rgba(0,0,0,0.2) 0 -1px 0;width:auto}
+header ul:before{content:'';position:absolute;z-index:-1;left:-5px;top:-4px;right:-5px;bottom:-6px;background:rgba(0,0,0,0.1);border-radius:8px;box-shadow:rgba(0,0,0,0.2) 0 -1px 0,inset rgba(255,255,255,0.7) 0 -1px 0}
+header ul li{width:79px;float:left;border-right:1px solid #3A7CBE;height:38px}
+header ul li.single{border:none}
+header ul li+li{width:78px;border-left:1px solid #8BBEF3}
+header ul li+li+li{border-right:none;width:79px}
+header ul a{line-height:1;font-size:11px;color:#fff;color:rgba(255,255,255,0.8);display:block;text-align:center;font-weight:400;padding-top:6px;height:40px;text-shadow:rgba(0,0,0,0.4) 0 -1px 0}
+header ul a strong{font-size:14px;display:block;color:#fff;-webkit-font-smoothing:antialiased}
+section{padding:15px 20px;font-size:15px;border-top:1px solid #fff;background:linear_gradient(#fafafa, #DEDEDE 700px);border-radius:0 0 8px 8px;position:relative}
+hr{border:0;background:#aaa;height:1px;margin:0 0 20px}
+footer{width:640px;margin:0 auto;padding:20px 0 0;color:#ccc;overflow:hidden}
+footer a{color:#fff;font-weight:bold}
+footer p{float:left}
+footer p+p{float:right}
