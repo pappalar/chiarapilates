@@ -28,14 +28,14 @@ h1 {
   font-size: 6rem;
   font-weight: 700;
   color: #B1A9D9;
-  text-shadow: 2px 2px 4px #272727;
+  text-shadow: 2px 2px 4px #8F3D83;
 }
 
 h2 {
   font-size: 3rem;
   font-weight: 700;
   color: #B1A9D9;
-  text-shadow: 2px 2px 4px #272727;
+  text-shadow: 2px 2px 4px #8F3D83;
 }
 
 h3 {
@@ -51,7 +51,7 @@ h4 {
   font-size: 1.5rem;
   color: #B1A9D9;
   padding: 0 0 15 0;
-text-shadow: 2px 2px 4px #Ddd;
+text-shadow: 1px 1px 2px #BBB;
 }
 
 
