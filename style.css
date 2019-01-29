@@ -9,6 +9,10 @@ html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, ab
   box-sizing: inherit;
 }
 
+ol, ul {
+    list-style: none;
+}
+
 html {
   background-color: #FFFFFF;
   font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -24,12 +28,14 @@ h1 {
   font-size: 6rem;
   font-weight: 700;
   color: #B1A9D9;
+  text-shadow: 2px 2px 4px #272727;
 }
 
 h2 {
   font-size: 3rem;
   font-weight: 700;
   color: #B1A9D9;
+  text-shadow: 2px 2px 4px #272727;
 }
 
 h3 {
@@ -37,6 +43,7 @@ h3 {
   font-size: 2rem;
   color: #8F3D83;
   padding: 10 0 3 0;
+  text-shadow: 2px 2px 4px #BBB;
 }
 
 h4 {
@@ -44,6 +51,7 @@ h4 {
   font-size: 1.5rem;
   color: #B1A9D9;
   padding: 0 0 15 0;
+text-shadow: 2px 2px 4px #Ddd;
 }
 
 
@@ -111,31 +119,123 @@ h4 {
 
 #titolo {
   background-color: #272727;
-
-  padding: 60 0;
-
-  padding-bottom: 2rem;
+  padding: 2rem 1rem;
 }
+
+
+#logo {
+
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width: 100px;
+
+
+}
+
 #studio {
+  border-top: 1px solid #000;
   background-color: #F5F5F5;
   padding-top: 1rem;
   padding-bottom: 2rem;
 }
+
 #attivita {
   background-color: #F5F5F5;
   padding-bottom: 2rem;
 }
+
 #istruttori {
   background-color: #F5F5F5;
   padding-bottom: 2rem;
 }
+
 #contatti {
   background-color: #FFFFFF;
   padding-bottom: 2rem;
   padding-top: 1rem;
+  border-top: 1px solid #eeeeee;
+}
+
+#contatti a {
+  text-decoration: none;
 }
 
 
+footer {
+  border-top: 1px solid #eeeeee;
+  padding: 20px 0;
+  position: relative;
+  font-size: 0.75rem;
+
+  color: #777777;
+  clear: both;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.right {
+  float: right;
+  margin: 0;
+
+}
+
+.left {
+  float: left;
+  margin: 0;
+}
+
+
+.separator {
+  margin-top: 10px;
+}
+
+.map {
+  float: right;
+  margin: 0;
+  border: 1px solid #272727;
+
+}
+
+.interactive {
+text-decoration: none;
+    color: #000;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+.socialbutton {
+  margin-bottom: 5px;
+}
+
+.socialbutton a { color: inherit; }
+#contatti a { color: inherit; }
+
+.facebook:hover {
+color:#3d5b99;
+}
+
+.mail:hover {
+  color:red;
+}
+
+.phone:hover {
+  color:green;
+}
+
+.address:hover {
+ color:#B1A9D9;
+}
+
+.map iframe {
+  width: 400px;
+}
 
 
 /* Responsive layout - makes the two doppias stack on top of each other instead of next to each other */
@@ -158,4 +258,42 @@ h2 {
     max-width: 100%;
 
   }
+
+
+.map iframe {
+  width: 200px;
 }
+
+
+}
+
+
+/* Responsive layout - makes the two doppias stack on top of each other instead of next to each other */
+@media only screen and (max-width: 500px) {
+
+  h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+  .doppia {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .container {
+    max-width: 100%;
+
+  }
+
+
+.map {
+display: none;
+}
+
+
+}
+
