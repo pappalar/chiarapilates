@@ -6,7 +6,7 @@ html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, ab
   font-size:100%;
   font:inherit;
   vertical-align:baseline;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 ol, ul {
@@ -146,6 +146,11 @@ text-shadow: 2px 2px 4px #Ddd;
 }
 
 #istruttori {
+  background-color: #F5F5F5;
+  padding-bottom: 2rem;
+}
+
+#galleria {
   background-color: #F5F5F5;
   padding-bottom: 2rem;
 }
@@ -295,5 +300,50 @@ display: none;
 }
 
 
+}
+
+
+
+
+
+
+/* Galleria*/
+.imagerow {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+
+}
+
+/* Create four equal columns that sits next to each other */
+.imagecolumn {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.imagecolumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .imagecolumn {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .imagecolumn {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
