@@ -308,6 +308,15 @@ display: none;
 
 
 /* Galleria*/
+
+.imagecolumn img {
+    -o-transition:transform .3s;
+    -ms-transition:transform .3s;
+    -moz-transition:transform .3s;
+    -webkit-transition:transform .3s;
+    transition: transform .3s;
+}
+
 .imagerow {
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -327,6 +336,10 @@ display: none;
 .imagecolumn img {
   margin-top: 8px;
   vertical-align: middle;
+}
+
+.imagecolumn img:hover {
+  transform: scale(1.05);
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
