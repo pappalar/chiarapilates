@@ -87,10 +87,23 @@ section {
   background: #FFF;
   min-height: 100px;
 
+  flex: 0 100%;
+  margin-bottom: 20px; /* (100-32*3)/2 */
+  padding: 25px;
+}
+
+.card2 {
+  color: #272727;
+  border: solid #eaeaea 1px;
+  border-radius: 12px;
+  background: #FFF;
+  min-height: 100px;
+
   flex: 0 49%;
   margin-bottom: 2%; /* (100-49*2)/2 */
   padding: 20px;
 }
+
 
 /*
 .item2 {
@@ -181,7 +194,7 @@ section {
 
 }
 
-.card {
+.card2 {
   flex: 0 100%;
   margin-bottom: 20px; /* (100-32*3)/2 */
   padding: 25px;

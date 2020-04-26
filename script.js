@@ -20,7 +20,7 @@ var parto = new Activity(
 var muoviamoci = new Activity(
   "Muoviamoci insieme",
   "Il corso è dedicato a mamme e neonati nel dopo nascita. Attraverso movimenti mirati e specifici andremo a prenderci cura del corpo materno, facendo particolare attenzione alla salute del perineo, della parete addominale e della colonna vertebrale."
-);
+  );
 
 var anna = new Instructor(
   "Anna Tirone",
@@ -28,7 +28,7 @@ var anna = new Instructor(
   "anna.jpeg",
   "Anna Tirone",
   [parto, muoviamoci]
-);
+  );
 // ------------------------------------------------------------------------------
 var naturopatia = new Activity(
   "Naturopatia",
@@ -52,25 +52,210 @@ var arianna = new Instructor(
   "arianna.jpeg",
   "Arianna Nicola",
   [naturopatia, bach, reiki]
-);
+  );
+// ------------------------------------------------------------------------------
+var pilates = new Activity(
+  "Pilates Matwork",
+  "Il <b>Pilates Matwork</b> è uno specifico programma di esercizi che viene svolto a <b>corpo libero</b> o con piccoli attrezzi su un <b>tappetino</b>. Va ad agire sui <b>muscoli posturali</b>, con l’obiettivo di favorire un maggiore bilanciamento del corpo e aumentare il supporto della muscolatura alla colonna vertebrale. Non viene tralasciato il lavoro globale sull’intero corpo, con particolare attenzione alla forza, elasticità e al rafforzamento del <b>CORE</b>, o corsetto addominale."
+  );
+
+var reformer = new Activity(
+  "Pilates su Macchinari Reformer",
+  "Il Reformer è un macchinario che prevede un <b>repertorio di esercizi</b> per tutto il corpo, tramite un attrezzo progettato appositamente per consentire un </b>allenamento completo</b> potenziando i muscoli di <b>tutto il corpo</b> e migliorando la tonicità muscolare, la flessibilità articolare e la postura."
+  );
+
+var chiara = new Instructor(
+  "Chiara Trione",
+  "Laureata in Scienze Motorie, con specializzazione in Scienze dell’Educazione Motoria Adattata. Istruttrice nazionale di Fisiopilates. Chinesiologa dal 2013",
+  "chiara.jpg",
+  "Chiara Trione",
+  [pilates, reformer]
+  );
+
+// ------------------------------------------------------------------------------
+var sokushindo = new Activity(
+  "Riflessologia Plantare Sokushindo",
+  "Combina manovre delicate e profonde per offrire un vero rilassamento e una sensazione di gambe leggere. Comprende la digitopressione di punti e meridiani di agopuntura. Si può completare con il trattamento delle mani e della testa."
+  );
+
+var anpuku = new Activity(
+  "Massaggio Addominale Anpuku",
+  "È un metodo per sbloccare l'energia ed equilibrarla attraverso il movimento e la dispersione dei blocchi riscontrati. Si articola in una serie di manovre addominali, pressioni, frizioni, vibrazioni e rotazioni, Utile per la digestione, l'intestino e i disturbi femminili."
+  );
+
+var sotai = new Activity(
+  "Sotai",
+  "È una forma Giapponese di riequilibrio corporeo attraverso il movimento ed il respiro; creata dal medico Giapponese Keizo Hashimoto; è una forma di esercizi attivi e passivi utilizzati per correggere squilibri nell'integrità strutturale del corpo. il Sotai è un sistema di riequilibrio psicofisico attraverso la percezione e la consapevolezza del corpo -  che mira a recuperare il giusto equilibrio strutturale del corpo raggiungendo uno stato ottimale di salute fisica e mentale."
+  );
+
+var shiatsu = new Activity(
+  "Shiatsu",
+  "È una tecnica corporea, prevalentemente manuale che attraverso la pressione e l'allungamento corregge le disarmonie che creano disagio  e promuove ed aiuta a  mantenere lo stato di benessere."
+  );
+
+var tuina = new Activity(
+  "Tuina",
+  "È un trattamento energetico che si basa su diverse tecniche come pressione sui punti di agopuntura, frizione, spinta, scuotimento, dei meridiani, che smuovono le energie del ricevente stimolandolo a rigenerare le propri facoltà di auto-bilanciamento e ritorno al benessere."
+  );
+
+var moxa = new Activity(
+  "Moxa",
+  "È un'antica tecnica di origine orientale, che consistente nella stimolazione di alcuni punti della cute per mezzo del calore - sfruttando  il potere del calore unito ai punti e meridiani della medicina orientale  stimola il corpo e la sua circolazione a riattivare le fisiologie fondamentali."
+  );
+
+var coppettazione = new Activity(
+  "Coppettazione",
+  "Consiste nell'applicazione di coppette di vetro, bambù o ceramica sulla pelle - per aspirare tensioni, dolori e ristagni energetici.  Ha un'enorme efficacia sulle cicatrici, riducendone l'adesione tissutale migliorando la vitalità della pelle e l'inestetismo."
+  );
+
+var marco = new Instructor(
+  "Marco Superbi",
+  "Esperto in tecniche per il benessere come Tuina, Sotai e Shiatsu, trattamento Orientale del piede. Si occupa di trattamenti sui meridiani ed Agopunti per il riequilibrio di Corpo e Mente",
+  "marco.png",
+  "Marco Superbi",
+  [sokushindo,
+  anpuku,
+  sotai,
+  shiatsu,
+  tuina,
+  moxa,
+  coppettazione]
+  );
+
+// ------------------------------------------------------------------------------
+var psicomotricita = new Activity(
+  "Psicomotricità",
+  "5 incontri settimanali di un’ora di educazione psicomotoria con 4-5 bambini di 3 o di 4-5 anni in spazi pensati per promuovere l’iniziativa motoria e sperimentare il piacere senso-motorio, sotto la guida di una Terapista della neuropsicomotricità, Fisioterapista pediatrica."
+  );
+
+var massaggioinfantile = new Activity(
+  "Massaggio Infantile",
+  "Corsi di massaggio infantile per genitori e i loro bambini articolati in 5 incontri settimanali di un’ora e mezzo circa, tenuti da un’insegnante qualificata A.I.M.I. Oltre ad imparare la sequenza del massaggio, i genitori possono confrontarsi su tematiche inerenti alla crescita armoniosa del proprio bambino."
+  );
+
+var maritella = new Instructor(
+  "Margherita Brizio",
+  "Fisioterapista specializzata in età pediatrica, esperta nell’approccio neurocognitivo (ETC), diplomata metodo Bobath.  Neuropsicomotricista. Insegnante AIMI (massaggio del neonato e del bambino). Applicatore metodo Feuerstein.",
+  "maritella.png",
+  "Margherita Brizio",
+  [psicomotricita,
+  massaggioinfantile]
+  );
+
+// ------------------------------------------------------------------------------
+var ananda = new Activity(
+  "Ananda Yoga",
+  "Ananda Yoga, è dedicato a creare armonia tra corpo, mente e anima. Il suo obiettivo primario è aumentare la nostra consapevolezza. Si basa sul Hata Yoga classico, con Asana, pranajama, rilassamento e meditazione. Un esperienza di ascolto profondo per riscoprirti e cambiare passo dopo passo la tua vita."
+  );
+
+var power = new Activity(
+  "Power Yoga",
+  "Pratica dinamica per rafforzare il corpo e sbloccare il respiro, accrescere la forza e l’energia, aumentare la flessibilità, migliorare l’equilibrio, superare i propri limiti!"
+  );
+
+var bimbi = new Activity(
+  "Yoga Bimbi",
+  "Lo yoga aiuta i bambini a ritrovare la meraviglia che è in loro! Lezioni basate sul gioco e su tecniche espressive-artistiche, posizioni yoga ispirate agli Animali, storie, rilassamento e meditazione."
+  );
+
+var gravidanza = new Activity(
+  "Yoga in Gravidanza",
+  "Una pratica che aiuta a trovare il tempo e lo spazio per connetterti con il tuo bambino in modo profondo e coltivare il tuo istinto materno, ti dedicherai all’ascolto, alla scoperta del pavimento pelvico, ai pranajama più indicati, alle asana che ti accompagneranno per predisporre corpo e mente al parto."
+  );
+
+var yin = new Activity(
+  "Yin Yoga",
+  "Una pratica semplice e intensa che insegna a rilassare il corpo profondamente, calma le emozioni, stimola l'energia vitale dei meridiani e degli organi, e prepara la mente e il corpo per la meditazione."
+  );
+
+var nidra = new Activity(
+  "Yoga Nidra",
+  "Una pratica utile per il rilassamento profondo, la gestione delle situazioni emozionali, e contro lo stress."
+  );
+
+var nadia = new Instructor(
+  "Nadia Dotta",
+  "Praticante yoga dal 2004, diplomata presso la Scuola Europea di Ananda Yoga, accademia riconosciuta a livello internazionale da Yoga Alliance e European Yoga Federation. Formazioni in Power Yoga, Yoga bimbi, Yoga Gravidanza, Yin Yoga, Yoga Nidra, Dinamic Yoga Pro, GARUDA® DHARA CHAIR ecc...",
+  "nadia.jpg",
+  "Nadia Dotta",
+  [ananda,
+  power,
+  bimbi,
+  gravidanza,
+  yin,
+  nidra]
+  );
+
+// ------------------------------------------------------------------------------
+
+var dietista = new Activity(
+  "Dietista e educazione alimentare",
+  "Stefano (Dietista e Biologo Nutrizionista) effettua terapia dietetica per patologie (diabete, ipertensione, ipercolesterolemia..), educazione alimentare per singoli o gruppi, diete personalizzate per perdere peso. Specializzato nello sport, preparazione e gestione gare/stagione sportiva (crossfit, sport di squadra, endurance..). Ampia esperienza con bambini diabetici e malnutrizione dell'anziano (Borsa di studio in malnutrizione territoriale per l'Azienda Ospedaliera S.Croce, Cuneo nel 2018/19). Coltiva da anni la passione per la cucina e lo sport."
+  );
 
 
+var stefano = new Instructor(
+  "Stefano Arlotto",
+  "Dietista (università di Torino) e Biologo Nutrizionista. Specializzato in scienze dell'alimentazione (Università di Firenze). Perfezionamento in: Nutrizione nelle discipline sportive (Milano)",
+  "stefano.jpeg",
+  "Stefano Arlotto",
+  [dietista]
+  );
+
+// ------------------------------------------------------------------------------
+
+var pancafit = new Activity(
+  "Pancafit®",
+  "È un attrezzo brevettato (Metodo Raggi®), capace di riequilibrare la postura attraverso l’“allungamento muscolare globale decompensato”. I benefici sono la riduzione delle tensioni e rigidità muscolari, il miglioramento del respiro, coinvolgendo il diaframma ed infine la libertà e benessere nel movimento"
+  );
+
+var mobilita = new Activity(
+  "Corso Terza Età (Mobilità e Stretching)",
+  "Un’ora di ginnastica per il benessere del vostro corpo e della vostra mente. Si svolgeranno esercizi per il miglioramento della coordinazione, equilibrio, postura, tonicità ed elasticità muscolare."
+  );
+
+var totalbody = new Activity(
+  "Corso Total Body",
+  "Allenamento funzionale che stimola tutto il corpo, alternando il lavoro aerobico con esercizi di rinforzo muscolare. Vengono svolti esercizi a corpo libero o con l’utilizzo di piccoli attrezzi."
+  );
+
+var private = new Activity(
+  "Private/Semiprivate (duetto, trio)",
+  "Sedute personalizzate in base alle proprie esigenze.<br> Programmi di tonificazione muscolare. Recupero funzionale. Ginnastica correttiva e posturale"
+  );
+
+var valeria = new Instructor(
+  "Valeria Giordana",
+  "Laureata in Scienze Motorie e Sportive. Massoterapista (MCB). Terapista Pancafit®",
+  "valeria.jpeg",
+  "Valeria Giordana",
+  [pancafit, mobilita, totalbody, private]
+  );
 
 // ------------------------------------------------------------------------------
 var instructors = [
-  anna,
-  arianna
+anna,
+arianna,
+chiara,
+marco,
+maritella,
+nadia,
+stefano,
+valeria
 ];
 // ------------------------------------------------------------------------------
 
 // Cache of the template
-var activityTemplate = document.getElementById("attivita-template");
+var activityTemplateSingola = document.getElementById("attivita-template-singola");
+var activityTemplateDoppia = document.getElementById("attivita-template-doppia");
+
 var activityTitleTemplate = document.getElementById("attivita-title-template");
 var instructorsTemplate = document.getElementById("istruttori-template");
 
 
 // Get the contents of the template
-var activityTemplateHtml = activityTemplate.innerHTML;
+var cardSingola = activityTemplateSingola.innerHTML;
+var cardDoppia = activityTemplateDoppia.innerHTML;
 var activityTitleTemplateHtml = activityTitleTemplate.innerHTML;
 var instructorsTemplateHtml = instructorsTemplate.innerHTML;
 
@@ -104,7 +289,16 @@ for(let i = 0; i < instructors.length; i++) {
     // Per ogni attivita' creiamo una carta
     let activity = activities[j];
 
-    activityListHtml += activityTemplateHtml
+    var template = cardDoppia
+
+    var indice = j + 1
+    // In caso di card che finisce dispari, passa a singola card
+    if (indice == activities.length && indice%2 !=0 ) {
+      template = cardSingola
+    }
+
+
+    activityListHtml += template
     .replace(/{{title}}/g, activity.title)
     .replace(/{{description}}/g, activity.description);
   }
