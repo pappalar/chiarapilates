@@ -37,19 +37,21 @@
 
   <section id="attivita" class="sezione darkgray">
     <div class="container center darkpink medium regular separatorsotto">Attività</div>
-    <div id="attivita-list" class="center flex container">
+    <div id="attivita-list" class="center container">
+
       <!--Generated list items will go here-->
     </div>
 
     <!-- $$$$$$ -->
     <script id="attivita-template" type="text/template">
-      <div class="item1 shadow zoom">
+      <div class="card shadow zoom">
         <div class="lightpink small regular justify separatorsottosmall">{{title}}</div>
         <div class="justify">{{description}}</div>
       </div>
     </script>
 
     <script id="attivita-title-template" type="text/template">
+
       <div class="container center darkpink small regular separatorsotto">{{activitiesTitle}}</div>
     </script>
     <!-- $$$$$$ -->
@@ -66,12 +68,10 @@
     </div>
     <!-- $$$$$$ -->
     <script id="istruttori-template" type="text/template">
-      <div class="item2 shadow zoom">
-        <div>{{nome}}</div>
-        <div>{{descrizione}}</div>
+      <div class="card shadow zoom">
+        <div class="lightpink small regular justify separatorsottosmall">{{name}}</div>
+        <div class="justify">{{info}}</div>
       </div>
-
-
     </script>
     <!-- $$$$$$ -->
   </section>
