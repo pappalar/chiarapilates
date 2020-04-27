@@ -46,7 +46,11 @@ section {
 .center { text-align: center; }
 .textalignement { text-align: left; }
 /* ----------------------------------------------------------------------------------------------- */
-.logopink { color: #836B89; }
+.logopink {
+  color: #836B89;
+  color: #ac9bb0;
+  color: #a18da5;
+   }
 .lightpink { color: #B1A9D9; }
 
 .darkpink { color: #8F3D83; }
