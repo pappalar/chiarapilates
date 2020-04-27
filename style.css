@@ -37,11 +37,18 @@ section {
   margin-left: auto;
   margin-right: auto;
 }
+
+.logo {
+  max-width: 50rem;
+}
+
 /* ----------------------------------------------------------------------------------------------- */
 .center { text-align: center; }
 .textalignement { text-align: left; }
 /* ----------------------------------------------------------------------------------------------- */
+.logopink { color: #836B89; }
 .lightpink { color: #B1A9D9; }
+
 .darkpink { color: #8F3D83; }
 /* ----------------------------------------------------------------------------------------------- */
 .black { background-color: #272727; }
@@ -262,7 +269,10 @@ color:#8F3D83;
 
 .container {
   max-width: 90%;
+}
 
+.logo {
+  max-width: 20rem;
 }
 
 .card2 {
