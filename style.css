@@ -33,13 +33,13 @@ section {
 */
 /* ----------------------------------------------------------------------------------------------- */
 .container {
-  max-width: 70%;
+  max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
 }
 /* ----------------------------------------------------------------------------------------------- */
 .center { text-align: center; }
-.justify { text-align: justify; }
+.textalignement { text-align: left; }
 /* ----------------------------------------------------------------------------------------------- */
 .lightpink { color: #B1A9D9; }
 .darkpink { color: #8F3D83; }
@@ -104,20 +104,82 @@ section {
   padding: 20px;
 }
 
+.profileheader {
 
-/*
-.item2 {
-  color: #272727;
-  border-radius: 12px;
-  border: solid #eaeaea 1px;
-  background: #FFF;
-  flex: 0 49%;
-  min-height: 100px;
-  // (100-49*2)/2
-  margin-bottom: 2%;
-  padding: 15px;
+  display: flex;
+  margin-bottom: 1.5rem;
+  align-items: center;
 }
-*/
+
+.profilepicture {
+
+    order: 0;
+    margin-right: 1.5rem;
+    margin-left: 0;
+
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 100%;
+    line-height: 0;
+    background-color: rgb(247, 247, 247);
+    width: 96px;
+    height: 96px;
+
+    border: 1px solid #8F3D83;
+}
+
+.profilepicture img {
+  width: 96px;
+    height: 96px;
+}
+
+.profileheaderinfo {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+
+.profilename {
+
+}
+
+.profilebuttons {
+
+  text-decoration: none;
+  min-height: 24px;
+}
+
+.profilebuttons a {
+  text-decoration: none;
+  /*text-align: center;*/
+  /*min-width: 24px;*/
+  font-size: 1.7rem;
+  margin-right: .375rem!important;
+  margin-right: .7rem!important;
+  display: inline-block!important;
+
+  color:#272727;;
+
+}
+
+
+.profileinfo {
+
+}
+
+
+.pwhatsapp:hover {
+color:#8F3D83;
+}
+
+.pinstagram:hover {
+  color:#8F3D83;
+}
+
+.pmail:hover {
+  color:#8F3D83;
+}
+
 .shadow {
   box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -178,16 +240,19 @@ section {
   -webkit-transition:.3s;
   transition: .3s;
 }
-.socialbutton { margin-bottom: 5px; }
+.socialbutton {
+  margin-bottom: 5px;
+}
 .socialbutton a { color: inherit; }
 #contatti a { color: inherit; }
 .facebook:hover { color:#3d5b99; }
 .mail:hover { color:red; }
 .phone:hover { color:green; }
+.instagram:hover { color:#8F3D83; }
 .address:hover { color:#B1A9D9; }
 /* ----------------------------------------------------------------------------------------------- */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 85rem) {
 
 .container {
   max-width: 90%;

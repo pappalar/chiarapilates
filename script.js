@@ -4,12 +4,15 @@ function Activity(title, description) {
   this.description = description;
 }
 
-function Instructor(name, info, photoUrl, activitiesTitle, activities) {
+function Instructor(name, info, photoUrl, activitiesTitle, activities, whatsapp, mail, instagram) {
   this.name = name;
   this.info = info;
   this.photoUrl = photoUrl;
   this.activitiesTitle = activitiesTitle;
   this.activities = activities;
+  this.whatsapp = whatsapp;
+  this.mail = mail;
+  this.instagram = instagram;
 }
 // ------------------------------------------------------------------------------
 var parto = new Activity(
@@ -27,7 +30,10 @@ var anna = new Instructor(
   "Laureata in Ostetricia presso l’università degli Studi di Torino. Attualmente lavora come libera professionista, offrendo servizi per l’area materno infantile e per la salute delle donne in generale.",
   "anna.jpeg",
   "Anna Tirone",
-  [parto, muoviamoci]
+  [parto, muoviamoci],
+  "+393277573301",
+  "ostetrica.anna.tirone@gmail.com",
+  "ostetrica.anna.tirone"
   );
 // ------------------------------------------------------------------------------
 var naturopatia = new Activity(
@@ -51,7 +57,10 @@ var arianna = new Instructor(
   "Naturopata diplomata all’accademia di Naturopatia Anea ad indirizzo bio-energetico ed ambientale. Operatrice abilitata in Osteopatia Bio-Fluidica. Diplomata al liceo scientifico ad indirizzo Socio-Psico-Pedagogico.",
   "arianna.jpeg",
   "Arianna Nicola",
-  [naturopatia, bach, reiki]
+  [naturopatia, bach, reiki],
+  "+393314496883",
+  "ariannanicola@icloud.com",
+  "arianna.nicola"
   );
 // ------------------------------------------------------------------------------
 var pilates = new Activity(
@@ -69,7 +78,10 @@ var chiara = new Instructor(
   "Laureata in Scienze Motorie, con specializzazione in Scienze dell’Educazione Motoria Adattata. Istruttrice nazionale di Fisiopilates. Chinesiologa dal 2013",
   "chiara.jpg",
   "Chiara Trione",
-  [pilates, reformer]
+  [pilates, reformer],
+  "+393452322283",
+  "chiara.trione@gmail.com",
+  "chiara_pilates"
   );
 
 // ------------------------------------------------------------------------------
@@ -119,7 +131,10 @@ var marco = new Instructor(
   shiatsu,
   tuina,
   moxa,
-  coppettazione]
+  coppettazione],
+  "+393488029204",
+  "markosuperbi@gmai.com",
+  "markosuperbi"
   );
 
 // ------------------------------------------------------------------------------
@@ -136,10 +151,13 @@ var massaggioinfantile = new Activity(
 var maritella = new Instructor(
   "Margherita Brizio",
   "Fisioterapista specializzata in età pediatrica, esperta nell’approccio neurocognitivo (ETC), diplomata metodo Bobath.  Neuropsicomotricista. Insegnante AIMI (massaggio del neonato e del bambino). Applicatore metodo Feuerstein.",
-  "maritella.png",
+  "maritella.jpg",
   "Margherita Brizio",
   [psicomotricita,
-  massaggioinfantile]
+  massaggioinfantile],
+  "+393297539935",
+  "margherita.brizio@virgilio.it",
+  ""
   );
 
 // ------------------------------------------------------------------------------
@@ -183,7 +201,10 @@ var nadia = new Instructor(
   bimbi,
   gravidanza,
   yin,
-  nidra]
+  nidra],
+  "+393497319843",
+  "yoga@nadiadotta.com",
+  "nadiadotta"
   );
 
 // ------------------------------------------------------------------------------
@@ -199,7 +220,10 @@ var stefano = new Instructor(
   "Dietista (università di Torino) e Biologo Nutrizionista. Specializzato in scienze dell'alimentazione (Università di Firenze). Perfezionamento in: Nutrizione nelle discipline sportive (Milano)",
   "stefano.jpeg",
   "Stefano Arlotto",
-  [dietista]
+  [dietista],
+  "+393202804617",
+  "stefanoar@virgilio.it",
+  "mytrofi_"
   );
 
 // ------------------------------------------------------------------------------
@@ -229,7 +253,10 @@ var valeria = new Instructor(
   "Laureata in Scienze Motorie e Sportive. Massoterapista (MCB). Terapista Pancafit®",
   "valeria.jpeg",
   "Valeria Giordana",
-  [pancafit, mobilita, totalbody, private]
+  [pancafit, mobilita, totalbody, private],
+  "+393397615898",
+  "valeria.giordana@hotmail.it",
+  "valekinesis"
   );
 
 // ------------------------------------------------------------------------------
@@ -270,10 +297,34 @@ var instructorsListHtml = "";
 for(let i = 0; i < instructors.length; i++) {
   let instructor = instructors[i];
 
+
+  var whatsapp = ""
+  if (instructor.whatsapp != "" && instructor.whatsapp != undefined) {
+    whatsapp = '<a class="pwhatsapp fab fa-2x fa-whatsapp" href="tel:' + instructor.whatsapp + ' "></a>'
+  }
+
+  var instagram = ""
+  if (instructor.instagram != "" && instructor.instagram != undefined) {
+    instagram = '<a class="pinstagram fab fa-2x fa-instagram" href="https://instagram.com/' + instructor.instagram + ' "></a>'
+  }
+
+  var mail = ""
+  if (instructor.mail != "" && instructor.mail != undefined) {
+    mail = '<a class="pmail far fa-2x fa-envelope" href="mailto:' + instructor.mail + '"></a>'
+  }
+
+
+
   // Rimpiazza I dati degli istruttori
   instructorsListHtml += instructorsTemplateHtml
   .replace(/{{name}}/g, instructor.name)
   .replace(/{{info}}/g, instructor.info)
+  .replace(/{{photoUrl}}/g, instructor.photoUrl)
+  .replace(/{{mail}}/g, mail)
+  .replace(/{{whatsapp}}/g, whatsapp)
+  .replace(/{{instagram}}/g, instagram)
+
+
 
 
   activityListHtml += activityTitleTemplateHtml.replace(/{{activitiesTitle}}/g, instructor.activitiesTitle);

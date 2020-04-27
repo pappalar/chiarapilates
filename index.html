@@ -10,12 +10,16 @@
   <!-- ================================================================ -->
   <!-- CSS -->
 
-  <link rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+  <!-- <link rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
   integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
   crossorigin="anonymous">
+ -->
 
+  <script src="https://kit.fontawesome.com/231d9c5a9f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+
+
 
 </head>
 <!-- ---------------------------------------------------------------- -->
@@ -45,15 +49,15 @@
     <!-- $$$$$$ -->
     <script id="attivita-template-singola" type="text/template">
       <div class="card shadow zoom">
-        <div class="lightpink small regular justify separatorsottosmall">{{title}}</div>
-        <div class="justify">{{description}}</div>
+        <div class="lightpink small regular textalignement separatorsottosmall">{{title}}</div>
+        <div class="textalignement">{{description}}</div>
       </div>
     </script>
 
     <script id="attivita-template-doppia" type="text/template">
       <div class="card2 shadow zoom">
-        <div class="lightpink small regular justify separatorsottosmall">{{title}}</div>
-        <div class="justify">{{description}}</div>
+        <div class="lightpink small regular textalignement separatorsottosmall">{{title}}</div>
+        <div class="textalignement">{{description}}</div>
       </div>
     </script>
 
@@ -75,10 +79,32 @@
     </div>
     <!-- $$$$$$ -->
     <script id="istruttori-template" type="text/template">
-      <div class="card shadow zoom">
-        <div class="lightpink small regular justify separatorsottosmall">{{name}}</div>
-        <div class="justify">{{info}}</div>
+      <div class="card2 shadow zoom">
+        <div class="profileheader">
+
+          <div class="profilepicture">
+            <img src="assets/{{photoUrl}}" alt="{{name}}">
+          </div>
+
+          <div class="profileheaderinfo">
+
+            <div class="profilename lightpink small regular textalignement separatorsottosmall">
+              {{name}}
+            </div>
+
+            <div class="profilebuttons textalignement">
+
+
+              {{whatsapp}}
+              {{instagram}}
+              {{mail}}
+
+            </div>
+          </div>
+        </div>
+        <div class="profileinfo textalignement">{{info}}</div>
       </div>
+
     </script>
     <!-- $$$$$$ -->
   </section>
@@ -90,19 +116,25 @@
     <h3 class="container center">Contatti</h3>
     <div class="container">
       <div class="mail socialbutton interactive">
-        <i class="fas fa-envelope-square"></i>
+        <i class="fas fa-envelope-square fa-2x"></i>
         <a href="mailto:chiara.trione@gmail.com">chiara.trione@gmail.com</a>
       </div>
 
       <div class="phone socialbutton interactive">
-        <i class="fas fa-phone-square"></i>
+        <i class="fas fa-phone-square fa-2x"></i>
         <a href="tel:+393886967485">+39 388 69 67 485</a>
       </div>
 
-      <div class="facebook socialbutton interactive">
-        <i class="fab fa-facebook"></i>
-        <a href="https://www.facebook.com/chiaretta.trione/">@chiaretta.trione</a>
+      <!-- <div class="facebook socialbutton interactive">
+        <i class="fab fa-facebook-square fa-2x"></i>
+        <a href="https://www.facebook.com/chiara.trione/">@chiara.trione</a>
       </div>
+ -->
+      <div class="instagram socialbutton interactive">
+        <i class="fab fa-instagram-square fa-2x"></i>
+        <a href="https://www.instagram.com/chiara_pilates/">chiara_pilates</a>
+      </div>
+
 
       <div class="separatorsotto"></div>
       <div class="address interactive">
