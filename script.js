@@ -261,9 +261,9 @@ var valeria = new Instructor(
 
 // ------------------------------------------------------------------------------
 var instructors = [
+chiara,
 anna,
 arianna,
-chiara,
 marco,
 maritella,
 nadia,
@@ -273,16 +273,14 @@ valeria
 // ------------------------------------------------------------------------------
 
 // Cache of the template
-var activityTemplateSingola = document.getElementById("attivita-template-singola");
-var activityTemplateDoppia = document.getElementById("attivita-template-doppia");
+var activityTemplate = document.getElementById("attivita-template");
 
 var activityTitleTemplate = document.getElementById("attivita-title-template");
 var instructorsTemplate = document.getElementById("istruttori-template");
 
 
 // Get the contents of the template
-var cardSingola = activityTemplateSingola.innerHTML;
-var cardDoppia = activityTemplateDoppia.innerHTML;
+var activityCard = activityTemplate.innerHTML;
 var activityTitleTemplateHtml = activityTitleTemplate.innerHTML;
 var instructorsTemplateHtml = instructorsTemplate.innerHTML;
 
@@ -314,6 +312,10 @@ for(let i = 0; i < instructors.length; i++) {
   }
 
 
+  var cardType = "card2"
+  if (instructor == chiara) {
+    cardType = "card"
+  }
 
   // Rimpiazza I dati degli istruttori
   instructorsListHtml += instructorsTemplateHtml
@@ -323,8 +325,7 @@ for(let i = 0; i < instructors.length; i++) {
   .replace(/{{mail}}/g, mail)
   .replace(/{{whatsapp}}/g, whatsapp)
   .replace(/{{instagram}}/g, instagram)
-
-
+  .replace(/{{cardType}}/g, cardType)
 
 
   activityListHtml += activityTitleTemplateHtml.replace(/{{activitiesTitle}}/g, instructor.activitiesTitle);
@@ -340,18 +341,19 @@ for(let i = 0; i < instructors.length; i++) {
     // Per ogni attivita' creiamo una carta
     let activity = activities[j];
 
-    var template = cardDoppia
 
+    var cardType = "card2"
     var indice = j + 1
     // In caso di card che finisce dispari, passa a singola card
     if (indice == activities.length && indice%2 !=0 ) {
-      template = cardSingola
+      cardType = "card"
     }
 
 
-    activityListHtml += template
+    activityListHtml += activityCard
     .replace(/{{title}}/g, activity.title)
-    .replace(/{{description}}/g, activity.description);
+    .replace(/{{description}}/g, activity.description)
+    .replace(/{{cardType}}/g, cardType);
   }
   activityListHtml += '</div>'
 

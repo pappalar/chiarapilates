@@ -47,15 +47,8 @@
     </div>
 
     <!-- $$$$$$ -->
-    <script id="attivita-template-singola" type="text/template">
-      <div class="card shadow zoom">
-        <div class="lightpink small regular textalignement separatorsottosmall">{{title}}</div>
-        <div class="textalignement">{{description}}</div>
-      </div>
-    </script>
-
-    <script id="attivita-template-doppia" type="text/template">
-      <div class="card2 shadow zoom">
+    <script id="attivita-template" type="text/template">
+      <div class="{{cardType}} shadow zoom">
         <div class="lightpink small regular textalignement separatorsottosmall">{{title}}</div>
         <div class="textalignement">{{description}}</div>
       </div>
@@ -79,7 +72,7 @@
     </div>
     <!-- $$$$$$ -->
     <script id="istruttori-template" type="text/template">
-      <div class="card2 shadow zoom">
+      <div class="{{cardType}} shadow zoom">
         <div class="profileheader">
 
           <div class="profilepicture">
