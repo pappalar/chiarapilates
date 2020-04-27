@@ -254,6 +254,12 @@ color:#8F3D83;
 
 @media only screen and (max-width: 85rem) {
 
+.huge { font-size: 3rem; }
+.big { font-size: 2rem; }
+.medium { font-size: 1.5rem; }
+.small { font-size: 1.25rem; }
+.normal { font-size: 1rem; }
+
 .container {
   max-width: 90%;
 
