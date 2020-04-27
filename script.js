@@ -14,6 +14,9 @@ function Instructor(name, info, photoUrl, activitiesTitle, activities, whatsapp,
   this.mail = mail;
   this.instagram = instagram;
 }
+
+
+
 // ------------------------------------------------------------------------------
 var parto = new Activity(
   "ProMuoviamo il parto",
@@ -272,22 +275,32 @@ valeria
 ];
 // ------------------------------------------------------------------------------
 
+var galleria = [
+"galleria1.jpg",
+"galleria2.jpg",
+"galleria3.jpeg",
+"galleria4.jpeg",
+];
+
+// ------------------------------------------------------------------------------
 // Cache of the template
 var activityTemplate = document.getElementById("attivita-template");
-
 var activityTitleTemplate = document.getElementById("attivita-title-template");
 var instructorsTemplate = document.getElementById("istruttori-template");
+var galleriaTemplate = document.getElementById("galleria-template");
 
 
 // Get the contents of the template
 var activityCard = activityTemplate.innerHTML;
 var activityTitleTemplateHtml = activityTitleTemplate.innerHTML;
 var instructorsTemplateHtml = instructorsTemplate.innerHTML;
+var galleriaTemplateHtml = galleriaTemplate.innerHTML;
 
 
 // Final HTML variable as empty string
 var activityListHtml = "";
 var instructorsListHtml = "";
+var galleriaListHtml = "";
 
 // Loop through dataObject, replace placeholder tags
 // with actual data, and generate final HTML
@@ -331,9 +344,6 @@ for(let i = 0; i < instructors.length; i++) {
   activityListHtml += activityTitleTemplateHtml.replace(/{{activitiesTitle}}/g, instructor.activitiesTitle);
   activityListHtml += '<div class="flex">'
 
-
-
-
   // Attivita
   let activities = instructor.activities;
   for(let j = 0; j < activities.length; j++) {
@@ -359,7 +369,22 @@ for(let i = 0; i < instructors.length; i++) {
 
 }
 
+for(let i = 0; i < galleria.length; i++) {
+
+  var foto = galleria[i];
+
+  console.log(foto);
+
+  galleriaListHtml += galleriaTemplateHtml
+  .replace(/{{cardType}}/g, "card2")
+  .replace(/{{photoUrl}}/g, foto);
+
+  console.log(galleriaListHtml);
+
+}
+
 
 // Replace the HTML of #list with final HTML
 document.getElementById("attivita-list").innerHTML = activityListHtml;
 document.getElementById("istruttori-list").innerHTML = instructorsListHtml;
+document.getElementById("galleria-list").innerHTML = galleriaListHtml;
