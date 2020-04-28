@@ -26,12 +26,6 @@ html {
   line-height: 1.5;
 }
 /* ----------------------------------------------------------------------------------------------- */
-/*
-section {
-  padding: 0 1rem;
-}
-*/
-/* ----------------------------------------------------------------------------------------------- */
 .container {
   max-width: 80rem;
   margin-left: auto;
@@ -52,18 +46,12 @@ section {
   color: #a18da5;
    }
 .lightpink { color: #B1A9D9; }
-
 .darkpink { color: #8F3D83; }
 /* ----------------------------------------------------------------------------------------------- */
 .black { background-color: #272727; }
-/*.darkgray { background-color: #eaeaea; }
-.mediumgray { background-color: #eee; }
-.lightgray { background-color: #F1f1f1; }
-.superlightgray { background-color: #F5F5F5; }*/
 .white { background-color: #FFFFFF; }
 
 #titolo { border-top: 0px solid #ddd; }
-
 
 .bcolor0 { background-color: #eaeaea; }
 .bcolor1 { background-color: #eee; }
@@ -85,12 +73,17 @@ section {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+
+.header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 /* ----------------------------------------------------------------------------------------------- */
 #contatti a {
   text-decoration: none;
   font-weight: 300;
 }
-
 
 .flex {
  display: flex;
@@ -156,13 +149,9 @@ section {
   min-width: 0;
 }
 
-
-.profilename {
-
-}
+.profilename {}
 
 .profilebuttons {
-
   text-decoration: none;
   min-height: 24px;
 }
@@ -177,14 +166,9 @@ section {
   display: inline-block!important;
 
   color:#272727;;
-
 }
 
-
-.profileinfo {
-
-}
-
+.profileinfo {}
 
 .pwhatsapp:hover {
 color:#8F3D83;

@@ -71,7 +71,7 @@ var naturopatia = new Activity(
 
 var bach = new Activity(
   "Fiori di Bach",
-  "I Fiori di Bach sono 38 rimedi floreali individuati dal Dr. Edward Bach, tra il 1928 e il 1935, in Inghilterra.  I fiori intervengono sia a livello fisico sia a livello psico-emotivo agendo sul piano energetico-vibrazionale, ripristinando una condizione di armonia mentale, grazie alla quale, le naturali difese dell’organismo possono svolgere più efficacemente il proprio compito."
+  "I Fiori di Bach sono 38 rimedi floreali individuati dal Dr. Edward Bach, tra il 1928 e il 1935, in Inghilterra. I fiori intervengono sia a livello fisico sia a livello psico-emotivo agendo sul piano energetico-vibrazionale, ripristinando una condizione di armonia mentale, grazie alla quale, le naturali difese dell’organismo possono svolgere più efficacemente il proprio compito."
   );
 
 var reiki = new Activity(
@@ -272,6 +272,26 @@ var valeria = new Instructor(
   "bcolor2"
   );
 
+
+// ------------------------------------------------------------------------------
+var feldenkrais = new Activity(
+  "Feldenkrais®",
+  "Il Metodo Feldenkrais® consente di riconoscere, ridurre o evitare dolori, blocchi e malesseri psicofisici. Con movimenti semplici, ma spesso inusuali, porta a scoprire e risvegliare parti ignote di noi. Ristabilisce un tono muscolare equilibrato e aiuta a migliorare i movimenti di tutti i giorni. Per seguire le suddette lezioni è necessario diventare socio dell'a.s.d Cuerpemente."
+  );
+
+
+var tamara = new Instructor(
+  "Tamara Gosman",
+  "",
+  "tamara.jpeg",
+  "Feldenkrais®",
+  [feldenkrais],
+  "+393917447827",
+  "cuerpomenteasd@gmail.com",
+  "cuerpomenteasd",
+  "bcolor1"
+  );
+
 // ------------------------------------------------------------------------------
 var instructors = [
 chiara,
@@ -281,7 +301,8 @@ marco,
 maritella,
 nadia,
 stefano,
-valeria
+valeria,
+tamara
 ];
 // ------------------------------------------------------------------------------
 
@@ -341,17 +362,17 @@ function generateIstruttore(instructor) {
 
   var whatsapp = ""
   if (instructor.whatsapp != "" && instructor.whatsapp != undefined) {
-    whatsapp = '<a class="pwhatsapp fab fa-2x fa-whatsapp" href="tel:' + instructor.whatsapp + ' "></a>'
+    whatsapp = '<a target="_blank" class="pwhatsapp fab fa-2x fa-whatsapp" href="tel:' + instructor.whatsapp + ' "></a>'
   }
 
   var instagram = ""
   if (instructor.instagram != "" && instructor.instagram != undefined) {
-    instagram = '<a class="pinstagram fab fa-2x fa-instagram" href="https://instagram.com/' + instructor.instagram + ' "></a>'
+    instagram = '<a target="_blank" class="pinstagram fab fa-2x fa-instagram" href="https://instagram.com/' + instructor.instagram + ' "></a>'
   }
 
   var mail = ""
   if (instructor.mail != "" && instructor.mail != undefined) {
-    mail = '<a class="pmail far fa-2x fa-envelope" href="mailto:' + instructor.mail + '"></a>'
+    mail = '<a target="_blank" class="pmail far fa-2x fa-envelope" href="mailto:' + instructor.mail + '"></a>'
   }
 
 
