@@ -93,7 +93,7 @@ section {
 
 .card {
   color: #272727;
-  border: solid #eaeaea 1px;
+  /*border: solid #eaeaea 1px;*/
   border-radius: 12px;
   background: #FFF;
   min-height: 100px;
@@ -105,7 +105,7 @@ section {
 
 .card2 {
   color: #272727;
-  border: solid #eaeaea 1px;
+  /*border: solid #eaeaea 1px;*/
   border-radius: 12px;
   background: #FFF;
   min-height: 100px;
