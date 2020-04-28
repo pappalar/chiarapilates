@@ -4,10 +4,11 @@ function Activity(title, description) {
   this.description = description;
 }
 
-function Instructor(name, info, photoUrl, activities, whatsapp, mail, instagram, bcolor) {
+function Instructor(name, info, photoUrl, disciplina, activities, whatsapp, mail, instagram, bcolor) {
   this.name = name;
   this.info = info;
   this.photoUrl = photoUrl;
+  this.disciplina = disciplina;
   this.activities = activities;
   this.whatsapp = whatsapp;
   this.mail = mail;
@@ -30,6 +31,7 @@ var chiara = new Instructor(
   "Chiara Trione",
   "Laureata in Scienze Motorie, con specializzazione in Scienze dell’Educazione Motoria Adattata. Istruttrice nazionale di Fisiopilates. Chinesiologa dal 2013",
   "chiara.jpg",
+  "Pilates",
   [pilates, reformer],
   "+393452322283",
   "chiara.trione@gmail.com",
@@ -53,6 +55,7 @@ var anna = new Instructor(
   "Anna Tirone",
   "Laureata in Ostetricia presso l’università degli Studi di Torino. Attualmente lavora come libera professionista, offrendo servizi per l’area materno infantile e per la salute delle donne in generale.",
   "anna.jpeg",
+  "Parto",
   [parto, muoviamoci],
   "+393277573301",
   "ostetrica.anna.tirone@gmail.com",
@@ -80,6 +83,7 @@ var arianna = new Instructor(
   "Arianna Nicola",
   "Naturopata diplomata all’accademia di Naturopatia Anea ad indirizzo bio-energetico ed ambientale. Operatrice abilitata in Osteopatia Bio-Fluidica. Diplomata al liceo scientifico ad indirizzo Socio-Psico-Pedagogico.",
   "arianna.jpeg",
+  "Naturopatia",
   [naturopatia, bach, reiki],
   "+393314496883",
   "ariannanicola@icloud.com",
@@ -128,6 +132,7 @@ var marco = new Instructor(
   "Marco Superbi",
   "Esperto in tecniche per il benessere come Tuina, Sotai e Shiatsu, trattamento Orientale del piede. Si occupa di trattamenti sui meridiani ed Agopunti per il riequilibrio di Corpo e Mente",
   "marco.png",
+  "Massaggi",
   [sokushindo,
   anpuku,
   sotai,
@@ -156,6 +161,7 @@ var maritella = new Instructor(
   "Margherita Brizio",
   "Fisioterapista specializzata in età pediatrica, esperta nell’approccio neurocognitivo (ETC), diplomata metodo Bobath.  Neuropsicomotricista. Insegnante AIMI (massaggio del neonato e del bambino). Applicatore metodo Feuerstein.",
   "maritella.jpg",
+  "Infantile",
   [psicomotricita,
   massaggioinfantile],
   "+393297539935",
@@ -199,6 +205,7 @@ var nadia = new Instructor(
   "Nadia Dotta",
   "Praticante yoga dal 2004, diplomata presso la Scuola Europea di Ananda Yoga, accademia riconosciuta a livello internazionale da Yoga Alliance e European Yoga Federation. Formazioni in Power Yoga, Yoga bimbi, Yoga Gravidanza, Yin Yoga, Yoga Nidra, Dinamic Yoga Pro, GARUDA® DHARA CHAIR ecc...",
   "nadia.jpg",
+  "Yoga",
   [ananda,
   power,
   bimbi,
@@ -223,6 +230,7 @@ var stefano = new Instructor(
   "Stefano Arlotto",
   "Dietista (università di Torino) e Biologo Nutrizionista. Specializzato in scienze dell'alimentazione (Università di Firenze). Perfezionamento in: Nutrizione nelle discipline sportive (Milano)",
   "stefano.jpeg",
+  "Dieta",
   [dietista],
   "+393202804617",
   "stefanoar@virgilio.it",
@@ -256,6 +264,7 @@ var valeria = new Instructor(
   "Valeria Giordana",
   "Laureata in Scienze Motorie e Sportive. Massoterapista (MCB). Terapista Pancafit®",
   "valeria.jpeg",
+  "Ginnastica",
   [pancafit, mobilita, totalbody, private],
   "+393397615898",
   "valeria.giordana@hotmail.it",
@@ -318,7 +327,7 @@ function generateSezioni() {
 
     htmlSezione += templateSezione
     .replace(/{{bcolor}}/g, instructor.bcolor)
-    .replace(/{{titolo}}/g, instructor.name)
+    .replace(/{{titolo}}/g, instructor.disciplina)
     .replace(/{{istruttore}}/g, generateIstruttore(instructor))
     .replace(/{{attivita}}/g, generateAttivita(instructor.activities));
 
