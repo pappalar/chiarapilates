@@ -56,13 +56,20 @@ section {
 .darkpink { color: #8F3D83; }
 /* ----------------------------------------------------------------------------------------------- */
 .black { background-color: #272727; }
-.darkgray { background-color: #eaeaea; }
+/*.darkgray { background-color: #eaeaea; }
 .mediumgray { background-color: #eee; }
 .lightgray { background-color: #F1f1f1; }
-.superlightgray { background-color: #F5F5F5; }
+.superlightgray { background-color: #F5F5F5; }*/
 .white { background-color: #FFFFFF; }
 
 #titolo { border-top: 0px solid #ddd; }
+
+
+.bcolor0 { background-color: #eaeaea; }
+.bcolor1 { background-color: #eee; }
+.bcolor2 { background-color: #F1f1f1; }
+.bcolor3 { background-color: #F5F5F5; }
+
 /* ----------------------------------------------------------------------------------------------- */
 .bold { font-weight: 700; }
 .regular { font-weight: 300; }

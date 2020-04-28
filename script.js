@@ -4,17 +4,38 @@ function Activity(title, description) {
   this.description = description;
 }
 
-function Instructor(name, info, photoUrl, activitiesTitle, activities, whatsapp, mail, instagram) {
+function Instructor(name, info, photoUrl, activities, whatsapp, mail, instagram, bcolor) {
   this.name = name;
   this.info = info;
   this.photoUrl = photoUrl;
-  this.activitiesTitle = activitiesTitle;
   this.activities = activities;
   this.whatsapp = whatsapp;
   this.mail = mail;
   this.instagram = instagram;
+  this.bcolor = bcolor
 }
 
+
+var pilates = new Activity(
+  "Pilates Matwork",
+  "Il <b>Pilates Matwork</b> è uno specifico programma di esercizi che viene svolto a <b>corpo libero</b> o con piccoli attrezzi su un <b>tappetino</b>. Va ad agire sui <b>muscoli posturali</b>, con l’obiettivo di favorire un maggiore bilanciamento del corpo e aumentare il supporto della muscolatura alla colonna vertebrale. Non viene tralasciato il lavoro globale sull’intero corpo, con particolare attenzione alla forza, elasticità e al rafforzamento del <b>CORE</b>, o corsetto addominale."
+  );
+
+var reformer = new Activity(
+  "Pilates su Macchinari Reformer",
+  "Il Reformer è un macchinario che prevede un <b>repertorio di esercizi</b> per tutto il corpo, tramite un attrezzo progettato appositamente per consentire un </b>allenamento completo</b> potenziando i muscoli di <b>tutto il corpo</b> e migliorando la tonicità muscolare, la flessibilità articolare e la postura."
+  );
+
+var chiara = new Instructor(
+  "Chiara Trione",
+  "Laureata in Scienze Motorie, con specializzazione in Scienze dell’Educazione Motoria Adattata. Istruttrice nazionale di Fisiopilates. Chinesiologa dal 2013",
+  "chiara.jpg",
+  [pilates, reformer],
+  "+393452322283",
+  "chiara.trione@gmail.com",
+  "chiara_pilates",
+  "bcolor1"
+  );
 
 
 // ------------------------------------------------------------------------------
@@ -32,11 +53,11 @@ var anna = new Instructor(
   "Anna Tirone",
   "Laureata in Ostetricia presso l’università degli Studi di Torino. Attualmente lavora come libera professionista, offrendo servizi per l’area materno infantile e per la salute delle donne in generale.",
   "anna.jpeg",
-  "Anna Tirone",
   [parto, muoviamoci],
   "+393277573301",
   "ostetrica.anna.tirone@gmail.com",
-  "ostetrica.anna.tirone"
+  "ostetrica.anna.tirone",
+  "bcolor2"
   );
 // ------------------------------------------------------------------------------
 var naturopatia = new Activity(
@@ -59,33 +80,13 @@ var arianna = new Instructor(
   "Arianna Nicola",
   "Naturopata diplomata all’accademia di Naturopatia Anea ad indirizzo bio-energetico ed ambientale. Operatrice abilitata in Osteopatia Bio-Fluidica. Diplomata al liceo scientifico ad indirizzo Socio-Psico-Pedagogico.",
   "arianna.jpeg",
-  "Arianna Nicola",
   [naturopatia, bach, reiki],
   "+393314496883",
   "ariannanicola@icloud.com",
-  "arianna.nicola"
+  "arianna.nicola",
+  "bcolor3"
   );
 // ------------------------------------------------------------------------------
-var pilates = new Activity(
-  "Pilates Matwork",
-  "Il <b>Pilates Matwork</b> è uno specifico programma di esercizi che viene svolto a <b>corpo libero</b> o con piccoli attrezzi su un <b>tappetino</b>. Va ad agire sui <b>muscoli posturali</b>, con l’obiettivo di favorire un maggiore bilanciamento del corpo e aumentare il supporto della muscolatura alla colonna vertebrale. Non viene tralasciato il lavoro globale sull’intero corpo, con particolare attenzione alla forza, elasticità e al rafforzamento del <b>CORE</b>, o corsetto addominale."
-  );
-
-var reformer = new Activity(
-  "Pilates su Macchinari Reformer",
-  "Il Reformer è un macchinario che prevede un <b>repertorio di esercizi</b> per tutto il corpo, tramite un attrezzo progettato appositamente per consentire un </b>allenamento completo</b> potenziando i muscoli di <b>tutto il corpo</b> e migliorando la tonicità muscolare, la flessibilità articolare e la postura."
-  );
-
-var chiara = new Instructor(
-  "Chiara Trione",
-  "Laureata in Scienze Motorie, con specializzazione in Scienze dell’Educazione Motoria Adattata. Istruttrice nazionale di Fisiopilates. Chinesiologa dal 2013",
-  "chiara.jpg",
-  "Chiara Trione",
-  [pilates, reformer],
-  "+393452322283",
-  "chiara.trione@gmail.com",
-  "chiara_pilates"
-  );
 
 // ------------------------------------------------------------------------------
 var sokushindo = new Activity(
@@ -127,7 +128,6 @@ var marco = new Instructor(
   "Marco Superbi",
   "Esperto in tecniche per il benessere come Tuina, Sotai e Shiatsu, trattamento Orientale del piede. Si occupa di trattamenti sui meridiani ed Agopunti per il riequilibrio di Corpo e Mente",
   "marco.png",
-  "Marco Superbi",
   [sokushindo,
   anpuku,
   sotai,
@@ -137,7 +137,8 @@ var marco = new Instructor(
   coppettazione],
   "+393488029204",
   "markosuperbi@gmai.com",
-  "markosuperbi"
+  "markosuperbi",
+  "bcolor2"
   );
 
 // ------------------------------------------------------------------------------
@@ -155,12 +156,12 @@ var maritella = new Instructor(
   "Margherita Brizio",
   "Fisioterapista specializzata in età pediatrica, esperta nell’approccio neurocognitivo (ETC), diplomata metodo Bobath.  Neuropsicomotricista. Insegnante AIMI (massaggio del neonato e del bambino). Applicatore metodo Feuerstein.",
   "maritella.jpg",
-  "Margherita Brizio",
   [psicomotricita,
   massaggioinfantile],
   "+393297539935",
   "margherita.brizio@virgilio.it",
-  ""
+  "",
+  "bcolor1"
   );
 
 // ------------------------------------------------------------------------------
@@ -198,7 +199,6 @@ var nadia = new Instructor(
   "Nadia Dotta",
   "Praticante yoga dal 2004, diplomata presso la Scuola Europea di Ananda Yoga, accademia riconosciuta a livello internazionale da Yoga Alliance e European Yoga Federation. Formazioni in Power Yoga, Yoga bimbi, Yoga Gravidanza, Yin Yoga, Yoga Nidra, Dinamic Yoga Pro, GARUDA® DHARA CHAIR ecc...",
   "nadia.jpg",
-  "Nadia Dotta",
   [ananda,
   power,
   bimbi,
@@ -207,7 +207,8 @@ var nadia = new Instructor(
   nidra],
   "+393497319843",
   "yoga@nadiadotta.com",
-  "nadiadotta"
+  "nadiadotta",
+  "bcolor0"
   );
 
 // ------------------------------------------------------------------------------
@@ -222,11 +223,11 @@ var stefano = new Instructor(
   "Stefano Arlotto",
   "Dietista (università di Torino) e Biologo Nutrizionista. Specializzato in scienze dell'alimentazione (Università di Firenze). Perfezionamento in: Nutrizione nelle discipline sportive (Milano)",
   "stefano.jpeg",
-  "Stefano Arlotto",
   [dietista],
   "+393202804617",
   "stefanoar@virgilio.it",
-  "mytrofi_"
+  "mytrofi_",
+  "bcolor1"
   );
 
 // ------------------------------------------------------------------------------
@@ -255,11 +256,11 @@ var valeria = new Instructor(
   "Valeria Giordana",
   "Laureata in Scienze Motorie e Sportive. Massoterapista (MCB). Terapista Pancafit®",
   "valeria.jpeg",
-  "Valeria Giordana",
   [pancafit, mobilita, totalbody, private],
   "+393397615898",
   "valeria.giordana@hotmail.it",
-  "valekinesis"
+  "valekinesis",
+  "bcolor2"
   );
 
 // ------------------------------------------------------------------------------
@@ -283,31 +284,51 @@ var galleria = [
 ];
 
 // ------------------------------------------------------------------------------
-// Cache of the template
-var activityTemplate = document.getElementById("attivita-template");
-var activityTitleTemplate = document.getElementById("attivita-title-template");
-var instructorsTemplate = document.getElementById("istruttori-template");
-var galleriaTemplate = document.getElementById("galleria-template");
+// GALLERIA
+// ------------------------------------------------------------------------------
+function generateGalleria() {
+  var templateGalleria = document.getElementById("template-galleria").innerHTML;
+  var htmlGalleria = "";
 
 
-// Get the contents of the template
-var activityCard = activityTemplate.innerHTML;
-var activityTitleTemplateHtml = activityTitleTemplate.innerHTML;
-var instructorsTemplateHtml = instructorsTemplate.innerHTML;
-var galleriaTemplateHtml = galleriaTemplate.innerHTML;
+  for(let i = 0; i < galleria.length; i++) {
+
+    var foto = galleria[i];
+
+    htmlGalleria += templateGalleria
+    .replace(/{{cardType}}/g, "card2")
+    .replace(/{{photoUrl}}/g, foto);
+  }
+
+  document.getElementById("generated-galleria").innerHTML = htmlGalleria;
+}
 
 
-// Final HTML variable as empty string
-var activityListHtml = "";
-var instructorsListHtml = "";
-var galleriaListHtml = "";
+// ------------------------------------------------------------------------------
+// ISTRUTTORI
+// ------------------------------------------------------------------------------
 
-// Loop through dataObject, replace placeholder tags
-// with actual data, and generate final HTML
+function generateSezioni() {
 
-for(let i = 0; i < instructors.length; i++) {
-  let instructor = instructors[i];
+  var templateSezione = document.getElementById("template-sezione").innerHTML;
 
+  var htmlSezione = ""
+  for(let i = 0; i < instructors.length; i++) {
+    let instructor = instructors[i];
+
+    htmlSezione += templateSezione
+    .replace(/{{bcolor}}/g, instructor.bcolor)
+    .replace(/{{titolo}}/g, instructor.name)
+    .replace(/{{istruttore}}/g, generateIstruttore(instructor))
+    .replace(/{{attivita}}/g, generateAttivita(instructor.activities));
+
+    document.getElementById("generated-istruttori").innerHTML = htmlSezione;
+  }
+}
+
+function generateIstruttore(instructor) {
+  var htmlIstruttore = "";
+  var templateIstruttore = document.getElementById("template-istruttore").innerHTML;
 
   var whatsapp = ""
   if (instructor.whatsapp != "" && instructor.whatsapp != undefined) {
@@ -325,13 +346,13 @@ for(let i = 0; i < instructors.length; i++) {
   }
 
 
-  var cardType = "card2"
-  if (instructor == chiara) {
-    cardType = "card"
-  }
+  var cardType = "card"
+//   if (instructor == chiara) {
+//     cardType = "card"
+//   }
 
   // Rimpiazza I dati degli istruttori
-  instructorsListHtml += instructorsTemplateHtml
+  htmlIstruttore += templateIstruttore
   .replace(/{{name}}/g, instructor.name)
   .replace(/{{info}}/g, instructor.info)
   .replace(/{{photoUrl}}/g, instructor.photoUrl)
@@ -340,12 +361,15 @@ for(let i = 0; i < instructors.length; i++) {
   .replace(/{{instagram}}/g, instagram)
   .replace(/{{cardType}}/g, cardType)
 
+  return htmlIstruttore
 
-  activityListHtml += activityTitleTemplateHtml.replace(/{{activitiesTitle}}/g, instructor.activitiesTitle);
-  activityListHtml += '<div class="flex">'
+}
 
-  // Attivita
-  let activities = instructor.activities;
+function generateAttivita(activities) {
+  var htmlAttivita = ""
+  var templateAttivita = document.getElementById("template-attivita").innerHTML;
+
+
   for(let j = 0; j < activities.length; j++) {
 
     // Per ogni attivita' creiamo una carta
@@ -353,38 +377,101 @@ for(let i = 0; i < instructors.length; i++) {
 
 
     var cardType = "card2"
-    var indice = j + 1
-    // In caso di card che finisce dispari, passa a singola card
-    if (indice == activities.length && indice%2 !=0 ) {
-      cardType = "card"
-    }
+    // var indice = j + 1
+    // // In caso di card che finisce dispari, passa a singola card
+    // if (indice == activities.length && indice%2 !=0 ) {
+    //   cardType = "card"
+    // }
 
 
-    activityListHtml += activityCard
+    htmlAttivita += templateAttivita
     .replace(/{{title}}/g, activity.title)
     .replace(/{{description}}/g, activity.description)
     .replace(/{{cardType}}/g, cardType);
   }
-  activityListHtml += '</div>'
 
+  return htmlAttivita
 }
 
-for(let i = 0; i < galleria.length; i++) {
-
-  var foto = galleria[i];
-
-  console.log(foto);
-
-  galleriaListHtml += galleriaTemplateHtml
-  .replace(/{{cardType}}/g, "card2")
-  .replace(/{{photoUrl}}/g, foto);
-
-  console.log(galleriaListHtml);
-
-}
+// // Final HTML variable as empty string
+// var activityListHtml = "";
+// var instructorsListHtml = "";
 
 
-// Replace the HTML of #list with final HTML
-document.getElementById("attivita-list").innerHTML = activityListHtml;
-document.getElementById("istruttori-list").innerHTML = instructorsListHtml;
-document.getElementById("galleria-list").innerHTML = galleriaListHtml;
+
+// // Loop through dataObject, replace placeholder tags
+// // with actual data, and generate final HTML
+
+// for(let i = 0; i < instructors.length; i++) {
+//   let instructor = instructors[i];
+
+
+//   var whatsapp = ""
+//   if (instructor.whatsapp != "" && instructor.whatsapp != undefined) {
+//     whatsapp = '<a class="pwhatsapp fab fa-2x fa-whatsapp" href="tel:' + instructor.whatsapp + ' "></a>'
+//   }
+
+//   var instagram = ""
+//   if (instructor.instagram != "" && instructor.instagram != undefined) {
+//     instagram = '<a class="pinstagram fab fa-2x fa-instagram" href="https://instagram.com/' + instructor.instagram + ' "></a>'
+//   }
+
+//   var mail = ""
+//   if (instructor.mail != "" && instructor.mail != undefined) {
+//     mail = '<a class="pmail far fa-2x fa-envelope" href="mailto:' + instructor.mail + '"></a>'
+//   }
+
+
+//   var cardType = "card2"
+//   if (instructor == chiara) {
+//     cardType = "card"
+//   }
+
+//   // Rimpiazza I dati degli istruttori
+//   instructorsListHtml += instructorsTemplateHtml
+//   .replace(/{{name}}/g, instructor.name)
+//   .replace(/{{info}}/g, instructor.info)
+//   .replace(/{{photoUrl}}/g, instructor.photoUrl)
+//   .replace(/{{mail}}/g, mail)
+//   .replace(/{{whatsapp}}/g, whatsapp)
+//   .replace(/{{instagram}}/g, instagram)
+//   .replace(/{{cardType}}/g, cardType)
+
+
+//   activityListHtml += activityTitleTemplateHtml.replace(/{{activitiesTitle}}/g, instructor.activitiesTitle);
+//   activityListHtml += '<div class="flex">'
+
+//   // Attivita
+//   let activities = instructor.activities;
+//   for(let j = 0; j < activities.length; j++) {
+
+//     // Per ogni attivita' creiamo una carta
+//     let activity = activities[j];
+
+
+//     var cardType = "card2"
+//     var indice = j + 1
+//     // In caso di card che finisce dispari, passa a singola card
+//     if (indice == activities.length && indice%2 !=0 ) {
+//       cardType = "card"
+//     }
+
+
+//     activityListHtml += activityCard
+//     .replace(/{{title}}/g, activity.title)
+//     .replace(/{{description}}/g, activity.description)
+//     .replace(/{{cardType}}/g, cardType);
+//   }
+//   activityListHtml += '</div>'
+
+// }
+
+
+
+
+// // Replace the HTML of #list with final HTML
+// document.getElementById("attivita-list").innerHTML = activityListHtml;
+// document.getElementById("istruttori-list").innerHTML = instructorsListHtml;
+
+generateGalleria()
+generateSezioni()

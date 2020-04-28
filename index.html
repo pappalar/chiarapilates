@@ -4,23 +4,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
-
   <title>Chiara Pilates</title>
-
   <!-- ================================================================ -->
   <!-- CSS -->
-
-  <!-- <link rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
-  integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-  crossorigin="anonymous">
- -->
-
   <script src="https://kit.fontawesome.com/231d9c5a9f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
-
-
-
 </head>
 <!-- ---------------------------------------------------------------- -->
 
@@ -37,63 +25,49 @@
       <img class="logo" src="assets/logo.png">
     </div>
 
-    <!-- <div class="container center lightpink huge bold">Chiara Pilates</div> -->
     <div class="container center logopink big regular">Concentrati... Rilassati... Esprimiti</div>
   </section>
   <!-- ================================================================ -->
 
 <!-- ================================================================ -->
-  <section id="galleria" class="sezione superlightgray">
-    <!-- <div class="container center darkpink medium regular separatorsotto">Galleria</div> -->
+  <section id="galleria" class="sezione bcolor0">
 
-    <div id="galleria-list" class="center flex container">
+    <div id="generated-galleria" class="center flex container">
       <!--Generated list items will go here-->
     </div>
-    <!-- $$$$$$ -->
-    <script id="galleria-template" type="text/template">
+
+  </section>
+<!-- ================================================================ -->
+
+  <div id="generated-istruttori">
+      <!--Generated list items will go here-->
+  </div>
+
+  <script id="template-galleria" type="text/template">
       <div class="{{cardType}} shadow zoom galleriafoto">
         <img src="assets/{{photoUrl}}">
       </div>
-
     </script>
 
-  </section>
+  <!-- $$$$$$ -->
+    <script id="template-sezione" type="text/template">
+      <section class="sezione {{bcolor}}">
+        <div class="center container">
+          <div class="darkpink medium bold separatorsotto">{{titolo}}</div>
 
-<!-- ================================================================ -->
+          <div class="flex">
+              {{istruttore}}
+            </div>
 
-  <section id="attivita" class="sezione darkgray">
-    <div class="container center darkpink medium bold separatorsotto">Attività</div>
-    <div id="attivita-list" class="center container">
+          <div class="flex">
+            {{attivita}}
+          </div>
 
-      <!--Generated list items will go here-->
-    </div>
-
-    <!-- $$$$$$ -->
-    <script id="attivita-template" type="text/template">
-      <div class="{{cardType}} shadow zoom">
-        <div class="lightpink small regular textalignement separatorsottosmall">{{title}}</div>
-        <div class="textalignement">{{description}}</div>
-      </div>
+        </div>
+      </section>
     </script>
 
-    <script id="attivita-title-template" type="text/template">
-
-      <div class="container center darkpink small regular separatorsotto">{{activitiesTitle}}</div>
-    </script>
-    <!-- $$$$$$ -->
-
-  </section>
-
-
-
-  <!-- ================================================================ -->
-  <section id="istruttori" class="sezione lightgray">
-    <div class="container center darkpink medium regular separatorsotto">Istruttori</div>
-    <div id="istruttori-list" class="center flex container">
-      <!--Generated list items will go here-->
-    </div>
-    <!-- $$$$$$ -->
-    <script id="istruttori-template" type="text/template">
+    <script id="template-istruttore" type="text/template">
       <div class="{{cardType}} shadow zoom">
         <div class="profileheader">
 
@@ -108,12 +82,9 @@
             </div>
 
             <div class="profilebuttons textalignement">
-
-
               {{whatsapp}}
               {{instagram}}
               {{mail}}
-
             </div>
           </div>
         </div>
@@ -121,9 +92,16 @@
       </div>
 
     </script>
-    <!-- $$$$$$ -->
-  </section>
 
+
+    <script id="template-attivita" type="text/template">
+      <div class="{{cardType}} shadow zoom">
+        <div class="lightpink small regular textalignement separatorsottosmall">{{title}}</div>
+        <div class="textalignement">{{description}}</div>
+      </div>
+    </script>
+
+    <!-- $$$$$$ -->
 <!-- ================================================================ -->
   <!-- ================================================================ -->
   <section id="contatti" class="sezione white">
