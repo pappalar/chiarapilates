@@ -55,7 +55,7 @@ var anna = new Instructor(
   "Anna Tirone",
   "Laureata in Ostetricia presso l’università degli Studi di Torino. Attualmente lavora come libera professionista, offrendo servizi per l’area materno infantile e per la salute delle donne in generale.",
   "anna.jpeg",
-  "Parto",
+  "Pre e Post Parto",
   [parto, muoviamoci],
   "+393277573301",
   "ostetrica.anna.tirone@gmail.com",
@@ -132,7 +132,7 @@ var marco = new Instructor(
   "Marco Superbi",
   "Esperto in tecniche per il benessere come Tuina, Sotai e Shiatsu, trattamento Orientale del piede. Si occupa di trattamenti sui meridiani ed Agopunti per il riequilibrio di Corpo e Mente",
   "marco.png",
-  "Massaggi",
+  "Shiatsu e Sotai",
   [sokushindo,
   anpuku,
   sotai,
@@ -161,7 +161,7 @@ var maritella = new Instructor(
   "Margherita Brizio",
   "Fisioterapista specializzata in età pediatrica, esperta nell’approccio neurocognitivo (ETC), diplomata metodo Bobath.  Neuropsicomotricista. Insegnante AIMI (massaggio del neonato e del bambino). Applicatore metodo Feuerstein.",
   "maritella.jpg",
-  "Infantile",
+  "Psicomotricità Infantile",
   [psicomotricita,
   massaggioinfantile],
   "+393297539935",
@@ -230,7 +230,7 @@ var stefano = new Instructor(
   "Stefano Arlotto",
   "Dietista (università di Torino) e Biologo Nutrizionista. Specializzato in scienze dell'alimentazione (Università di Firenze). Perfezionamento in: Nutrizione nelle discipline sportive (Milano)",
   "stefano.jpeg",
-  "Dieta",
+  "Nutrizione e Dietistica",
   [dietista],
   "+393202804617",
   "stefanoar@virgilio.it",
@@ -264,7 +264,7 @@ var valeria = new Instructor(
   "Valeria Giordana",
   "Laureata in Scienze Motorie e Sportive. Massoterapista (MCB). Terapista Pancafit®",
   "valeria.jpeg",
-  "Ginnastica",
+  "Ginnastica Funzionale e 3a Età",
   [pancafit, mobilita, totalbody, private],
   "+393397615898",
   "valeria.giordana@hotmail.it",
@@ -282,7 +282,7 @@ var feldenkrais = new Activity(
 
 var tamara = new Instructor(
   "Tamara Gosman",
-  "",
+  "Ballerina professionista, formatasi al Teatro Colon di Buenos Aires, Insegnante diplomata presso la Yoga International Federation, studentessa in formazione nel Metodo Feldenkrais®, autorizzata ad insegnare Awarness Through Movement®.",
   "tamara.jpeg",
   "Feldenkrais®",
   [feldenkrais],
@@ -423,85 +423,6 @@ function generateAttivita(activities) {
   return htmlAttivita
 }
 
-// // Final HTML variable as empty string
-// var activityListHtml = "";
-// var instructorsListHtml = "";
-
-
-
-// // Loop through dataObject, replace placeholder tags
-// // with actual data, and generate final HTML
-
-// for(let i = 0; i < instructors.length; i++) {
-//   let instructor = instructors[i];
-
-
-//   var whatsapp = ""
-//   if (instructor.whatsapp != "" && instructor.whatsapp != undefined) {
-//     whatsapp = '<a class="pwhatsapp fab fa-2x fa-whatsapp" href="tel:' + instructor.whatsapp + ' "></a>'
-//   }
-
-//   var instagram = ""
-//   if (instructor.instagram != "" && instructor.instagram != undefined) {
-//     instagram = '<a class="pinstagram fab fa-2x fa-instagram" href="https://instagram.com/' + instructor.instagram + ' "></a>'
-//   }
-
-//   var mail = ""
-//   if (instructor.mail != "" && instructor.mail != undefined) {
-//     mail = '<a class="pmail far fa-2x fa-envelope" href="mailto:' + instructor.mail + '"></a>'
-//   }
-
-
-//   var cardType = "card2"
-//   if (instructor == chiara) {
-//     cardType = "card"
-//   }
-
-//   // Rimpiazza I dati degli istruttori
-//   instructorsListHtml += instructorsTemplateHtml
-//   .replace(/{{name}}/g, instructor.name)
-//   .replace(/{{info}}/g, instructor.info)
-//   .replace(/{{photoUrl}}/g, instructor.photoUrl)
-//   .replace(/{{mail}}/g, mail)
-//   .replace(/{{whatsapp}}/g, whatsapp)
-//   .replace(/{{instagram}}/g, instagram)
-//   .replace(/{{cardType}}/g, cardType)
-
-
-//   activityListHtml += activityTitleTemplateHtml.replace(/{{activitiesTitle}}/g, instructor.activitiesTitle);
-//   activityListHtml += '<div class="flex">'
-
-//   // Attivita
-//   let activities = instructor.activities;
-//   for(let j = 0; j < activities.length; j++) {
-
-//     // Per ogni attivita' creiamo una carta
-//     let activity = activities[j];
-
-
-//     var cardType = "card2"
-//     var indice = j + 1
-//     // In caso di card che finisce dispari, passa a singola card
-//     if (indice == activities.length && indice%2 !=0 ) {
-//       cardType = "card"
-//     }
-
-
-//     activityListHtml += activityCard
-//     .replace(/{{title}}/g, activity.title)
-//     .replace(/{{description}}/g, activity.description)
-//     .replace(/{{cardType}}/g, cardType);
-//   }
-//   activityListHtml += '</div>'
-
-// }
-
-
-
-
-// // Replace the HTML of #list with final HTML
-// document.getElementById("attivita-list").innerHTML = activityListHtml;
-// document.getElementById("istruttori-list").innerHTML = instructorsListHtml;
 
 generateGalleria()
 generateSezioni()
