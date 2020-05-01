@@ -1,3 +1,7 @@
+@font-face {
+  font-family: hurtmold;
+  src: url(hurtmold.ttf);
+}
 /* ----------------------------------------------------------------------------------------------- */
 /* GENERALE */
 /* ----------------------------------------------------------------------------------------------- */
@@ -58,7 +62,11 @@ html {
 .black { background-color: #272727; }
 .white { background-color: #FFFFFF; }
 
-#titolo { border-top: 0px solid #ddd; }
+#titolo {
+  border-top: 0px solid #ddd;
+  font-family: hurtmold;
+  font-size: 2rem;
+   }
 
 .bcolor0 { background-color: #eaeaea; }
 .bcolor1 { background-color: #eee; }
