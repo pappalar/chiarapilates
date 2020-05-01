@@ -33,7 +33,7 @@ html {
 }
 
 .logo {
-  max-width: 50rem;
+  max-width: 35rem;
 }
 
 /* ----------------------------------------------------------------------------------------------- */
@@ -72,11 +72,50 @@ html {
   border-top: 1px solid #ddd;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  position: relative;
+}
+
+#galleria {
+  border-top: 3px solid #FFF;
 }
 
 .header {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.bg-image {
+  transform: scale(1.1,1.1);
+  max-height: 600px;
+  position: absolute;
+  /* The image used */
+  background-image: url("assets/sfondo6.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  width: 100%;
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  z-index: 0;
+}
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.75); /* Black w/opacity/see-through */
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  z-index: 2;
+  padding: 20px;
+  text-align: center;
+  position: relative;
 }
 
 /* ----------------------------------------------------------------------------------------------- */
