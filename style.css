@@ -44,6 +44,13 @@ html {
   color: #836B89;
   color: #ac9bb0;
   color: #a18da5;
+  color: #836B89;
+  color: #8F3D83;
+  color: #43475E;
+  color: #555a77;
+  color: #4a4f68;
+
+
    }
 .lightpink { color: #B1A9D9; }
 .darkpink { color: #8F3D83; }
@@ -61,6 +68,7 @@ html {
 /* ----------------------------------------------------------------------------------------------- */
 .bold { font-weight: 700; }
 .regular { font-weight: 300; }
+
 /* ----------------------------------------------------------------------------------------------- */
 .huge { font-size: 6rem; }
 .big { font-size: 3rem; }
@@ -109,7 +117,7 @@ html {
 
 .bg-text {
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.75); /* Black w/opacity/see-through */
+  background-color: rgba(200,200,200, 0.75); /* Black w/opacity/see-through */
   font-weight: bold;
   border: 3px solid #f1f1f1;
   z-index: 2;
