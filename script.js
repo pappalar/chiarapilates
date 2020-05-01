@@ -295,16 +295,17 @@ var tamara = new Instructor(
 // ------------------------------------------------------------------------------
 var instructors = [
 chiara,
+valeria,
+nadia,
+tamara,
 anna,
 arianna,
-marco,
-maritella,
-nadia,
 stefano,
-valeria,
-tamara
+marco,
+maritella
 ];
 // ------------------------------------------------------------------------------
+
 
 var galleria = [
 "galleria1.jpg",
