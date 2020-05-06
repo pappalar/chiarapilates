@@ -33,7 +33,7 @@ var chiara = new Instructor(
   "chiara.jpg",
   "Pilates",
   [pilates, reformer],
-  "+393452322283",
+  "393452322283",
   "chiara.trione@gmail.com",
   "chiara_pilates",
   "bcolor1"
@@ -57,7 +57,7 @@ var anna = new Instructor(
   "anna.jpeg",
   "Pre e Post Parto",
   [parto, muoviamoci],
-  "+393277573301",
+  "393277573301",
   "ostetrica.anna.tirone@gmail.com",
   "ostetrica.anna.tirone",
   "bcolor2"
@@ -85,7 +85,7 @@ var arianna = new Instructor(
   "arianna.jpeg",
   "Naturopatia",
   [naturopatia, bach, reiki],
-  "+393314496883",
+  "393314496883",
   "ariannanicola@icloud.com",
   "arianna.nicola",
   "bcolor3"
@@ -140,7 +140,7 @@ var marco = new Instructor(
   tuina,
   moxa,
   coppettazione],
-  "+393488029204",
+  "393488029204",
   "markosuperbi@gmai.com",
   "markosuperbi",
   "bcolor2"
@@ -164,7 +164,7 @@ var maritella = new Instructor(
   "Psicomotricità Infantile",
   [psicomotricita,
   massaggioinfantile],
-  "+393297539935",
+  "393297539935",
   "margherita.brizio@virgilio.it",
   "",
   "bcolor1"
@@ -212,7 +212,7 @@ var nadia = new Instructor(
   gravidanza,
   yin,
   nidra],
-  "+393497319843",
+  "393497319843",
   "yoga@nadiadotta.com",
   "nadiadotta",
   "bcolor0"
@@ -232,7 +232,7 @@ var stefano = new Instructor(
   "stefano.jpeg",
   "Nutrizione e Dietistica",
   [dietista],
-  "+393202804617",
+  "393202804617",
   "stefanoar@virgilio.it",
   "mytrofi_",
   "bcolor1"
@@ -266,7 +266,7 @@ var valeria = new Instructor(
   "valeria.jpeg",
   "Ginnastica Funzionale e 3a Età",
   [pancafit, mobilita, totalbody, private],
-  "+393397615898",
+  "393397615898",
   "valeria.giordana@hotmail.it",
   "valekinesis",
   "bcolor2"
@@ -286,7 +286,7 @@ var tamara = new Instructor(
   "tamara.jpeg",
   "Feldenkrais®",
   [feldenkrais],
-  "+393917447827",
+  "393917447827",
   "cuerpomenteasd@gmail.com",
   "cuerpomenteasd",
   "bcolor1"
