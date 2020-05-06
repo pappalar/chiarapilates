@@ -33,7 +33,7 @@ var chiara = new Instructor(
   "chiara.jpg",
   "Pilates",
   [pilates, reformer],
-  "393452322283",
+  "393886967485",
   "chiara.trione@gmail.com",
   "chiara_pilates",
   "bcolor1"
