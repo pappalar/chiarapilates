@@ -363,7 +363,7 @@ function generateIstruttore(instructor) {
 
   var whatsapp = ""
   if (instructor.whatsapp != "" && instructor.whatsapp != undefined) {
-    whatsapp = '<a target="_blank" class="pwhatsapp fab fa-2x fa-whatsapp" href="tel:' + instructor.whatsapp + ' "></a>'
+    whatsapp = '<a target="_blank" class="pwhatsapp fab fa-2x fa-whatsapp" href="https://wa.me/' + instructor.whatsapp + ' "></a>'
   }
 
   var instagram = ""
