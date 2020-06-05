@@ -130,7 +130,7 @@ var coppettazione = new Activity(
 
 var marco = new Instructor(
   "Marco Superbi",
-  "Esperto in tecniche per il benessere come Tuina, Sotai e Shiatsu, trattamento Orientale del piede. Si occupa di trattamenti sui meridiani ed Agopunti per il riequilibrio di Corpo e Mente",
+  "Operatore e Docente per la Federazione Italiana Scuole Tuina e Qigong. Operatore ed Insegnante Shiatsu per la Scuola Giapponese di Madrid unica sede Europea riconosciuta dal Japan Shiatsu College di Tokyo.",
   "marco.png",
   "Shiatsu e Sotai",
   [sokushindo,
