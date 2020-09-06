@@ -68,6 +68,7 @@ html {
   font-size: 2rem;
    }
 
+.bcolor { background-color: #dadada; }
 .bcolor0 { background-color: #eaeaea; }
 .bcolor1 { background-color: #eee; }
 .bcolor2 { background-color: #F1f1f1; }
@@ -91,7 +92,7 @@ html {
   position: relative;
 }
 
-#galleria {
+.first {
   border-top: 3px solid #FFF;
 }
 
