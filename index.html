@@ -51,29 +51,36 @@
 
  </section>
  <!-- ================================================================ -->
- <section id="moduli" class="sezione bcolor first">
+ <section class="sezione bcolor first">
   <div class="center container">
-    <div class="darkpink medium bold separatorsotto">Moduli Corsi Pilates</div>
-    <div class="card shadow zoom">
-      <div class="">
-        <div class="lightpink small regular textalignement separatorsottosmall">
-          Scarica:
-        </div>
-        <ul class="moduliList textalignement">
-          <li>Regolamento Palestra</li>
-          <li>Informativa Privacy</li>
-          <li>Anagrafica</li>
-          <li>Abbonamenti</li>
-          <li>Autodichiarazione Covid-19</li>
-        </ul>
 
-      </div>
-
+    <div class="darkpink medium bold separatorsotto">
+      Moduli Corsi Pilates
     </div>
 
+    <div class="card shadow zoom">
 
+        <div class="lightpink small regular textalignement separatorsottosmall">
+          Scarica i Moduli:
+        </div>
+
+        <ul id="listamoduli" class="textalignement">
+        </ul>
+    </div>
   </div>
 </section>
+<script id="template-moduli" type="text/template">
+        <li class="modulo interactive">
+
+          <div class="pdfIcon">
+          <i class="far fa-file-pdf"></i>
+          </div>
+
+          <div class="pdfLink">
+          <a target="_blank" href="{{link}}">{{title}}</a>
+          </div>
+        </li>
+        </script>
 <!-- ================================================================ -->
 <section id="galleria" class="sezione bcolor0">
 
@@ -151,28 +158,28 @@
   <div class="container">
     <div class="mail socialbutton interactive">
       <i class="fas fa-envelope-square fa-2x"></i>
-      <a href="mailto:chiara.trione@gmail.com">chiara.trione@gmail.com</a>
+      <a target="_blank" href="mailto:chiara.trione@gmail.com">chiara.trione@gmail.com</a>
     </div>
 
     <div class="phone socialbutton interactive">
       <i class="fas fa-phone-square fa-2x"></i>
-      <a href="tel:+393886967485">+39 388 69 67 485</a>
+      <a target="_blank" href="tel:+393886967485">+39 388 69 67 485</a>
     </div>
 
       <!-- <div class="facebook socialbutton interactive">
         <i class="fab fa-facebook-square fa-2x"></i>
-        <a href="https://www.facebook.com/chiara.trione/">@chiara.trione</a>
+        <a target="_blank" href="https://www.facebook.com/chiara.trione/">@chiara.trione</a>
       </div>
     -->
     <div class="instagram socialbutton interactive">
       <i class="fab fa-instagram-square fa-2x"></i>
-      <a href="https://www.instagram.com/chiara_pilates/">chiara_pilates</a>
+      <a target="_blank" href="https://www.instagram.com/chiara_pilates/">chiara_pilates</a>
     </div>
 
 
     <div class="separatorsotto"></div>
     <div class="address interactive">
-      <a href="https://goo.gl/maps/UDaQkCcGzRG2">
+      <a target="_blank" href="https://goo.gl/maps/UDaQkCcGzRG2">
         <div class="">Chiara Pilates</div>
         <div class="">Viale Ambrogio da Fossano, 1,</div>
         <div class="">12045 Fossano CN</div>
@@ -187,7 +194,7 @@
 </section>
 <!-- =========================== FOOTER =========================== -->
 <section id="footer" class="center black">
-  <a class="container" href="https://github.com/racer1988">© 2020 Marco Pappalardo</a>
+  <a target="_blank" class="container" href="https://github.com/racer1988">© 2020 Marco Pappalardo</a>
 </section>
 <!-- ============================= DATA ============================= -->
 <script src="script.js"></script>

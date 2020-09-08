@@ -319,6 +319,26 @@ color:#8F3D83;
 .phone:hover { color:green; }
 .instagram:hover { color:#8F3D83; }
 .address:hover { color:#B1A9D9; }
+
+/* ----------------------------------------------------------------------------------------------- */
+
+.modulo {
+  margin-bottom: 5px;
+  min-width: 350px;
+}
+
+.modulo a {
+ color: inherit;
+ text-decoration: none;
+ margin-left: 5px;
+}
+
+.pdfLink, .pdfIcon {
+  display: inline-block;
+}
+
+
+.modulo:hover { color:#E50000; }
 /* ----------------------------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 85rem) {

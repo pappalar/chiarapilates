@@ -307,6 +307,44 @@ maritella
 // ------------------------------------------------------------------------------
 
 
+function Modulo(title, link) {
+  this.title = title;
+  this.link = link;
+}
+
+
+function generateModuli() {
+
+  var moduli = [
+  new Modulo("Regolamento Palestra","moduli/REGOLAMENTO.PALESTRA.CHIARAPILATES.pdf"),
+  new Modulo("Informativa Privacy","moduli/Privacy.CHIARAPILATES.pdf"),
+  new Modulo("Anagrafica","moduli/ANAGRAFICA.pdf"),
+  new Modulo("Abbonamenti","moduli/ABBONAMENTO.PREZZI.pdf"),
+  new Modulo("Autodichiarazione Covid-19","moduli/Autodichiarazione.Covid.ChiaraP.pdf"),
+  ];
+
+  var html = ""
+  var template = document.getElementById("template-moduli").innerHTML;
+
+
+  for(let i = 0; i < moduli.length; i++) {
+
+    let modulo = moduli[i];
+
+    html += template
+    .replace(/{{title}}/g, modulo.title)
+    .replace(/{{link}}/g, modulo.link);
+  }
+
+  document.getElementById("listamoduli").innerHTML = html;
+}
+
+
+
+// ------------------------------------------------------------------------------
+// GALLERIA
+// ------------------------------------------------------------------------------
+
 var galleria = [
 "galleria1.jpg",
 "galleria2.jpg",
@@ -314,9 +352,6 @@ var galleria = [
 "galleria4.jpeg",
 ];
 
-// ------------------------------------------------------------------------------
-// GALLERIA
-// ------------------------------------------------------------------------------
 function generateGalleria() {
   var templateGalleria = document.getElementById("template-galleria").innerHTML;
   var htmlGalleria = "";
@@ -427,3 +462,4 @@ function generateAttivita(activities) {
 
 generateGalleria()
 generateSezioni()
+generateModuli()
