@@ -295,13 +295,13 @@ var tamara = new Instructor(
 // ------------------------------------------------------------------------------
 var instructors = [
 chiara,
-valeria,
+//valeria,
 nadia,
 tamara,
 anna,
 arianna,
 stefano,
-marco,
+//marco,
 maritella
 ];
 // ------------------------------------------------------------------------------
